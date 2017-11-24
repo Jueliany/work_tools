@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>分行分列工具</title>
+		<style>
+
+			body{
+				margin: 0 auto;
+				
+			}
+			#main{
+				margin: 0 auto;
+				width: 800px;
+				background-color: lightskyblue;
+				text-align: center;
+				font-size: 0.8em;
+			}
+			#word{
+				margin-top: 50px;
+				height: 200px;
+				width: 400px;
+				text-align:center;
+				
+				
+			}
+			#button{
+				
+				align-content: 
+				height: auto;  
+				margin: 5px;
+				
+		
+				width: 50px;
+			}
+			.we{
+				margin: 0 auto;
+				text-align: center;
+				width: ;
+			}
+			
+			.tb table{
+				
+			}
+		</style>
+	   <script type="text/javascript">
+	   	var arr = new Array();
+	   	 function Cli(){
+	   		var word=document.getElementById("word");
+	   		var button=document.createElement("button");
+	   		var tb=document.getElementById("tb");
+	   		
+	   		
+	   		var radio=document.getElementsByName("radio");
+           
+             var selectvalue=null;   //  selectvalue为radio中选中的值
+             var i;
+             
+            
+             var sub=prompt("请输入换号符号");
+             	//alert(sub);
+             	
+             	for(i=0;i<radio.length;i++){
+
+                    if(radio[i].checked==true) {
+
+                             selectvalue=radio[i].value;
+
+                             break;
+
+                   }
+
+            }
+             
+             
+             
+	   	}
+	   	 
+	    function tb_list(var tb_type){
+	    	if()
+	    }
+	   </script>
+	</head>
+	<body>
+		<div id="main">
+			<div class="we">
+			<input type="text" name="word" id="word" value="请输入转换内容" />
+			</div>
+			<input type="button" onclick="Cli()" name="button" id="button" value="转换"/>
+			
+			横排<input type="radio" name="choose" value="h"/>
+			竖排<input type="radio" name="choose" value="s"/>
+		</div>
+		<div class="tb" id="tb"></div>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>
