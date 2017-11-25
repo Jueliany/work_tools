@@ -59,7 +59,24 @@
             
              var sub=prompt("请输入换号符号");
              	//alert(sub);
+             	var str=word.value;
              	
+             	var l=888,i=0;
+             	
+             	while(l!=-1){
+             		
+             		l=str.indexOf(sub);
+             		if(l<0){
+             			break;
+             		}
+             		
+             		arr[i]=str.substr(0,l);
+             		str=str.substr(l+1,str.length);
+             		alert(arr[i]);
+             		
+             	}
+
+             	///////////////////
              	for(i=0;i<radio.length;i++){
 
                     if(radio[i].checked==true) {
@@ -69,16 +86,32 @@
                              break;
 
                    }
-
-            }
+                }
+             
+             /////////////////////
+             tb_list(selectvalue);
+             
+             
+             
+             
+             function tb_list(b_type){
+             	
+             	var tb_str="<table>";
+             	
+	    	if(b_type=='h'){
+	    		
+	    	}else if(b_type=='s'){
+	    		
+	    	}else{alert(xx);}
+	    }
+             
+             
              
              
              
 	   	}
 	   	 
-	    function tb_list(var tb_type){
-	    	if()
-	    }
+	    
 	   </script>
 	</head>
 	<body>
